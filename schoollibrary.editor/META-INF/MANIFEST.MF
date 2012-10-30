@@ -8,8 +8,8 @@ Bundle-Activator: org.eclipse.example.library.presentation.SchoollibraryEditorPl
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: org.eclipse.example.library.presentation,
- org.eclipse.example.schoollibrary.presentation
+Export-Package: org.emftest.model.library.presentation,
+ org.emftest.model.schoollibrary.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  schoollibrary.edit;visibility:=reexport,
