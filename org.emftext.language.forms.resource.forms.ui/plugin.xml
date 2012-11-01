@@ -32,10 +32,6 @@
 		</category>
 		<wizard category="org.emftext.runtime.ui.EMFTextFileCategory" icon="/icons/default_new_icon.gif" class="org.emftext.language.forms.resource.forms.ui.FormsNewFileWizard" id="org.emftext.language.forms.resource.forms.ui.FormsNewFileWizard" name="EMFText .forms file">
 		</wizard>
-		<category id="org.emftext.runtime.ui.EMFTextProjectCategory" name="EMFText Project">
-		</category>
-		<wizard category="org.emftext.runtime.ui.EMFTextProjectCategory" icon="/icons/default_new_icon.gif" class="org.emftext.language.forms.resource.forms.ui.FormsNewProjectWizard" id="org.emftext.language.forms.resource.forms.ui.FormsNewProjectWizard" name="EMFText forms project" project="true">
-		</wizard>
 	</extension>
 	
 	<extension point="org.eclipse.ui.ide.markerResolution">
@@ -70,48 +66,6 @@
 		</specification>
 		<specification annotationType="org.emftext.language.forms.resource.forms.ui.occurences.declaration" label="Declarations (in .forms files)" textPreferenceKey="forms.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="forms.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="forms.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="forms.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="forms.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="forms.declarationTextStyle" textStylePreferenceValue="NONE">
 		</specification>
-	</extension>
-	
-	<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
-		<launchConfigurationTypeImage icon="/icons/launch_type_icon.gif" configTypeID="org.emftext.language.forms.resource.forms.ui.launchConfigurationType" id="org.emftext.language.forms.launchImage">
-		</launchConfigurationTypeImage>
-	</extension>
-	
-	<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
-		<launchConfigurationTabGroup type="org.emftext.language.forms.resource.forms.ui.launchConfigurationType" class="org.emftext.language.forms.resource.forms.ui.launch.FormsLaunchConfigurationTabGroup" id="org.emftext.language.forms.launchConfigurationTabGroup" helpContextId="org.emftext.language.forms.launchConfigHelpContext">
-			<launchMode mode="debug" perspective="org.eclipse.debug.ui.DebugPerspective" description="Debug forms model.">
-			</launchMode>
-			<launchMode mode="run" description="Run forms model.">
-			</launchMode>
-		</launchConfigurationTabGroup>
-	</extension>
-	
-	<extension point="org.eclipse.debug.ui.launchShortcuts">
-		<shortcut label="forms Application" icon="/icons/launch_shortcut_icon.gif" helpContextId="org.emftext.language.forms.launch" modes="run,debug" class="org.emftext.language.forms.resource.forms.ui.launch.FormsLaunchShortcut" description="Launch a forms model" id="org.emftext.language.forms.launchShortcut">
-			<description description="Run forms model" mode="run">
-			</description>
-			<description description="Debug forms model" mode="debug">
-			</description>
-			<contextualLaunch>
-				<enablement>
-					<with variable="selection">
-						<count value="1">
-						</count>
-						<iterate>
-							<test property="org.emftext.language.forms.isLaunchable">
-							</test>
-						</iterate>
-					</with>
-				</enablement>
-			</contextualLaunch>
-			<configurationType id="org.emftext.language.forms.resource.forms.ui.launchConfigurationType">
-			</configurationType>
-		</shortcut>
-	</extension>
-	
-	<extension point="org.eclipse.core.expressions.propertyTesters">
-		<propertyTester id="org.emftext.language.forms.PropertyTester" type="java.lang.Object" namespace="org.emftext.language.forms" properties="isLaunchable" class="org.emftext.language.forms.resource.forms.ui.FormsPropertyTester">
-		</propertyTester>
 	</extension>
 	
 	<extension point="org.eclipse.ui.editors.annotationTypes">

@@ -93,19 +93,4 @@
 		</persistent>
 	</extension>
 	
-	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
-		<launchConfigurationType id="org.emftext.language.forms.resource.forms.ui.launchConfigurationType" delegate="org.emftext.language.forms.resource.forms.launch.FormsLaunchConfigurationDelegate" modes="run,debug" name="forms Application" sourceLocatorId="org.emftext.language.forms.resource.forms.ui.sourceLocator" sourcePathComputerId="org.emftext.language.forms.resource.forms.ui.sourcePathComputer" delegateName="forms Launch Tooling" delegateDescription="This will run or debug .forms files.">
-		</launchConfigurationType>
-	</extension>
-	
-	<extension point="org.eclipse.debug.core.sourcePathComputers">
-		<sourcePathComputer class="org.emftext.language.forms.resource.forms.debug.FormsSourcePathComputerDelegate" id="org.emftext.language.forms.resource.forms.ui.sourcePathComputer">
-		</sourcePathComputer>
-	</extension>
-	
-	<extension point="org.eclipse.debug.core.sourceLocators">
-		<sourceLocator id="org.emftext.language.forms.resource.forms.ui.sourceLocator" class="org.emftext.language.forms.resource.forms.debug.FormsSourceLocator" name="forms Source Locator">
-		</sourceLocator>
-	</extension>
-	
 </plugin>
