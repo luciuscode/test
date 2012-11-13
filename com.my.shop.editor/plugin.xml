@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+
+  <extension
+    point = "org.eclipse.ui.newWizards">
+    <category
+      id = "org.eclipse.emf.ecore.Wizard.category.ID"
+      name="%_UI_Wizard_category">
+    </category>
+    <wizard
+      id = "com.my.shop.presentation.ShopModelWizardID"
+      name = "%_UI_ShopModelWizard_label"
+      class = "com.my.shop.presentation.ShopModelWizard"
+      category = "org.eclipse.emf.ecore.Wizard.category.ID"
+      icon = "icons/full/obj16/ShopModelFile.gif">
+      <description>%_UI_ShopModelWizard_description</description>
+      <selection class = "org.eclipse.core.resources.IResource" />
+    </wizard>
+  </extension>
+
+  <extension point = "org.eclipse.ui.editors">
+    <editor
+        id = "com.my.shop.presentation.ShopEditorID"
+        name = "%_UI_ShopEditor_label"
+        icon = "icons/full/obj16/ShopModelFile.gif"
+        extensions = "shop"
+        class = "com.my.shop.presentation.ShopEditor" 
+        contributorClass="com.my.shop.presentation.ShopActionBarContributor" >
+    </editor>
+  </extension>    
+</plugin>

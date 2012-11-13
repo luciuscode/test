@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="shop.ecore#/"
+    outputs="ShopXMI.xsd#/">
+  <nested inputs="shop.ecore#/" outputs="ShopXMI.xsd#/">
+    <nested inputs="shop.ecore#//Score" outputs="ShopXMI.xsd#//Score;XSDSimpleTypeDefinition">
+      <nested inputs="shop.ecore#//Score/Good" outputs="ShopXMI.xsd#//Score;XSDSimpleTypeDefinition/XSDEnumerationFacet"/>
+      <nested inputs="shop.ecore#//Score/Average" outputs="ShopXMI.xsd#//Score;XSDSimpleTypeDefinition/XSDEnumerationFacet=1"/>
+      <nested inputs="shop.ecore#//Score/Bad" outputs="ShopXMI.xsd#//Score;XSDSimpleTypeDefinition/XSDEnumerationFacet=2"/>
+    </nested>
+    <nested inputs="shop.ecore#//Shop" outputs="ShopXMI.xsd#//Shop;XSDComplexTypeDefinition">
+      <nested inputs="shop.ecore#//Shop/categories" outputs="ShopXMI.xsd#//Shop;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"/>
+    </nested>
+    <nested inputs="shop.ecore#//Shop" outputs="ShopXMI.xsd#//Shop;XSDElementDeclaration"/>
+    <nested inputs="shop.ecore#//Category" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1">
+      <nested inputs="shop.ecore#//Category/children" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"/>
+      <nested inputs="shop.ecore#//Category/parent" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDAttributeUse"/>
+      <nested inputs="shop.ecore#//Category/parent" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=1"/>
+      <nested inputs="shop.ecore#//Category/shop" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDAttributeUse=1"/>
+      <nested inputs="shop.ecore#//Category/shop" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=2"/>
+      <nested inputs="shop.ecore#//Category/products" outputs="ShopXMI.xsd#//Category;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=3"/>
+    </nested>
+    <nested inputs="shop.ecore#//Category" outputs="ShopXMI.xsd#//Category;XSDElementDeclaration=1"/>
+    <nested inputs="shop.ecore#//Product" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2">
+      <nested inputs="shop.ecore#//Product/price" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse"/>
+      <nested inputs="shop.ecore#//Product/description" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse=1"/>
+      <nested inputs="shop.ecore#//Product/avaiable" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse=2"/>
+      <nested inputs="shop.ecore#//Product/score" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse=3"/>
+      <nested inputs="shop.ecore#//Product/background" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse=4"/>
+      <nested inputs="shop.ecore#//Product/category" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDAttributeUse=5"/>
+      <nested inputs="shop.ecore#//Product/category" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle"/>
+      <nested inputs="shop.ecore#//Product/salesMap" outputs="ShopXMI.xsd#//Product;XSDComplexTypeDefinition=2/XSDParticle/XSDModelGroup/XSDParticle=1"/>
+    </nested>
+    <nested inputs="shop.ecore#//Product" outputs="ShopXMI.xsd#//Product;XSDElementDeclaration=2"/>
+    <nested inputs="shop.ecore#//NamedElement" outputs="ShopXMI.xsd#//NamedElement;XSDComplexTypeDefinition=3">
+      <nested inputs="shop.ecore#//NamedElement/name" outputs="ShopXMI.xsd#//NamedElement;XSDComplexTypeDefinition=3/XSDAttributeUse=1"/>
+    </nested>
+    <nested inputs="shop.ecore#//NamedElement" outputs="ShopXMI.xsd#//NamedElement;XSDElementDeclaration=3"/>
+    <nested inputs="shop.ecore#//StringToIntegerMapEntry" outputs="ShopXMI.xsd#//StringToIntegerMapEntry;XSDComplexTypeDefinition=4">
+      <nested inputs="shop.ecore#//StringToIntegerMapEntry/key" outputs="ShopXMI.xsd#//StringToIntegerMapEntry;XSDComplexTypeDefinition=4/XSDAttributeUse=1"/>
+      <nested inputs="shop.ecore#//StringToIntegerMapEntry/value" outputs="ShopXMI.xsd#//StringToIntegerMapEntry;XSDComplexTypeDefinition=4/XSDAttributeUse=2"/>
+    </nested>
+    <nested inputs="shop.ecore#//StringToIntegerMapEntry" outputs="ShopXMI.xsd#//StringToIntegerMapEntry;XSDElementDeclaration=4"/>
+  </nested>
+</xsd2ecore:XSD2EcoreMappingRoot>

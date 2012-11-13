@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:com.my.shop="http://com.my.shop" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com.my.shop">
+  <xsd:import schemaLocation="XMI.xsd" namespace="http://www.omg.org/XMI"/>
+  <xsd:simpleType name="Score">
+    <xsd:restriction base="xsd:NCName">
+      <xsd:enumeration value="Good"/>
+      <xsd:enumeration value="Average"/>
+      <xsd:enumeration value="Bad"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="Shop">
+    <xsd:complexContent>
+      <xsd:extension base="com.my.shop:NamedElement">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="categories" type="com.my.shop:Category"/>
+        </xsd:choice>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Shop" type="com.my.shop:Shop"/>
+  <xsd:complexType name="Category">
+    <xsd:complexContent>
+      <xsd:extension base="com.my.shop:NamedElement">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="children" type="com.my.shop:Category"/>
+          <xsd:element name="parent" type="com.my.shop:Category"/>
+          <xsd:element name="shop" type="com.my.shop:Shop"/>
+          <xsd:element name="products" type="com.my.shop:Product"/>
+        </xsd:choice>
+        <xsd:attribute name="parent" type="xsd:string"/>
+        <xsd:attribute name="shop" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Category" type="com.my.shop:Category"/>
+  <xsd:complexType name="Product">
+    <xsd:complexContent>
+      <xsd:extension base="com.my.shop:NamedElement">
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="category" type="com.my.shop:Category"/>
+          <xsd:element name="salesMap" type="com.my.shop:StringToIntegerMapEntry"/>
+        </xsd:choice>
+        <xsd:attribute name="price" type="xsd:double"/>
+        <xsd:attribute name="description" type="xsd:string"/>
+        <xsd:attribute name="avaiable" type="xsd:boolean"/>
+        <xsd:attribute name="score" type="com.my.shop:Score"/>
+        <xsd:attribute name="background" type="xsd:string"/>
+        <xsd:attribute name="category" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="Product" type="com.my.shop:Product"/>
+  <xsd:complexType name="NamedElement">
+    <xsd:choice minOccurs="0" maxOccurs="unbounded">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="name" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="NamedElement" type="com.my.shop:NamedElement"/>
+  <xsd:complexType name="StringToIntegerMapEntry">
+    <xsd:choice minOccurs="0" maxOccurs="unbounded">
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="key" type="xsd:string"/>
+    <xsd:attribute name="value" type="xsd:int"/>
+  </xsd:complexType>
+  <xsd:element name="StringToIntegerMapEntry" type="com.my.shop:StringToIntegerMapEntry"/>
+</xsd:schema>

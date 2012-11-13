@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.my.shop/src"
+    modelPluginID="com.my.shop" modelName="Shop" importerID="org.eclipse.emf.importer.ecore">
+  <foreignModel>shop.ecore</foreignModel>
+  <genPackages prefix="Shop" basePackage="com.my" disposableProviderFactory="true"
+      ecorePackage="shop.ecore#/">
+    <genEnums ecoreEnum="shop.ecore#//Score">
+      <genEnumLiterals ecoreEnumLiteral="shop.ecore#//Score/Good"/>
+      <genEnumLiterals ecoreEnumLiteral="shop.ecore#//Score/Average"/>
+      <genEnumLiterals ecoreEnumLiteral="shop.ecore#//Score/Bad"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="shop.ecore#//RGB"/>
+    <genClasses ecoreClass="shop.ecore#//Shop">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shop.ecore#//Shop/categories"/>
+    </genClasses>
+    <genClasses ecoreClass="shop.ecore#//Category">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shop.ecore#//Category/children"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference shop.ecore#//Category/parent"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference shop.ecore#//Category/shop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shop.ecore#//Category/products"/>
+    </genClasses>
+    <genClasses ecoreClass="shop.ecore#//Product">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference shop.ecore#//Product/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//Product/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//Product/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//Product/avaiable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//Product/score"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference shop.ecore#//Product/salesMap"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//Product/background"/>
+    </genClasses>
+    <genClasses ecoreClass="shop.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="shop.ecore#//StringToIntegerMapEntry">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//StringToIntegerMapEntry/key"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute shop.ecore#//StringToIntegerMapEntry/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
