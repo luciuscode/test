@@ -205,12 +205,15 @@ public class LibraryModelWizard extends Wizard implements INewWizard {
 	 * Create a new model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
-	protected EObject createInitialModel() {
+	protected EObject createInitialModel() { 
+		//TODO:
 		EClass eClass = (EClass)libraryPackage.getEClassifier(initialObjectCreationPage.getInitialObjectName());
 		EObject rootObject = libraryFactory.create(eClass);
+//		EObject rootObject = libraryFactory.createLibrary();
 		return rootObject;
+		
 	}
 
 	/**
@@ -564,7 +567,7 @@ public class LibraryModelWizard extends Wizard implements INewWizard {
 	 * The framework calls this to create the contents of the wizard.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 		@Override
 	public void addPages() {
@@ -609,6 +612,7 @@ public class LibraryModelWizard extends Wizard implements INewWizard {
 				}
 			}
 		}
+		//TODO:
 		initialObjectCreationPage = new LibraryModelWizardInitialObjectCreationPage("Whatever2");
 		initialObjectCreationPage.setTitle(LibraryEditorPlugin.INSTANCE.getString("_UI_LibraryModelWizard_label"));
 		initialObjectCreationPage.setDescription(LibraryEditorPlugin.INSTANCE.getString("_UI_Wizard_initial_object_description"));

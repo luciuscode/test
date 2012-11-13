@@ -6,6 +6,7 @@ package library.provider;
 import java.util.Collection;
 import java.util.List;
 
+import library.Library;
 import library.LibraryPackage;
 import library.Writer;
 
@@ -20,6 +21,7 @@ import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
+import org.eclipse.emf.edit.provider.ITableItemLabelProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
@@ -38,7 +40,7 @@ public class WriterItemProvider
 		IStructuredItemContentProvider,
 		ITreeItemContentProvider,
 		IItemLabelProvider,
-		IItemPropertySource {
+		IItemPropertySource, ITableItemLabelProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -48,7 +50,24 @@ public class WriterItemProvider
 	public WriterItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
+	public Object getColumnImage(Object object, int columnIndex) {
+		return null;
+	}
 
+	public String getColumnText(Object object, int columnIndex) {
+		Writer writer = (Writer) object;
+		switch (columnIndex) {
+		case 0:
+			return writer.getName();
+		case 1:
+			return writer.getBooks().size() + " books";
+		case 2:
+			return "";
+		default:
+			return "";
+		}
+	}
+	
 	/**
 	 * This returns the property descriptors for the adapted class.
 	 * <!-- begin-user-doc -->

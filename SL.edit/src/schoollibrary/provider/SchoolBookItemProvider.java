@@ -6,14 +6,20 @@ package schoollibrary.provider;
 import java.util.Collection;
 import java.util.List;
 
+import library.command.SetBookPrice;
 import library.provider.BookItemProvider;
 import library.provider.LibraryEditPlugin;
 
+import org.eclipse.emf.common.command.Command;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.ResourceLocator;
 
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.edit.command.SetCommand;
+import org.eclipse.emf.edit.domain.EditingDomain;
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -41,6 +47,13 @@ public class SchoolBookItemProvider
 		ITreeItemContentProvider,
 		IItemLabelProvider,
 		IItemPropertySource {
+	protected Command createSetCommand(EditingDomain domain, EObject owner, EStructuralFeature feature, Object value) 
+	  {
+		 if(feature == SchoollibraryPackage.eINSTANCE.getAsset_Value()){
+			 return new SetBookPrice(domain, owner, feature, value);
+		 }
+	    return new SetCommand(domain, owner, feature, value);
+	  } 
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

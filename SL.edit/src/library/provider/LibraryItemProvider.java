@@ -9,6 +9,7 @@ import java.util.List;
 import library.Library;
 import library.LibraryFactory;
 import library.LibraryPackage;
+import library.Writer;
 
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
@@ -23,11 +24,13 @@ import org.eclipse.emf.edit.provider.IItemLabelProvider;
 import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
+import org.eclipse.emf.edit.provider.ITableItemLabelProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
 import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
+import schoollibrary.SchoolLibrary;
 import schoollibrary.SchoollibraryFactory;
 
 /**
@@ -43,7 +46,7 @@ public class LibraryItemProvider
 		IStructuredItemContentProvider,
 		ITreeItemContentProvider,
 		IItemLabelProvider,
-		IItemPropertySource {
+		IItemPropertySource, ITableItemLabelProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
@@ -53,7 +56,24 @@ public class LibraryItemProvider
 	public LibraryItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
+	
+	public Object getColumnImage(Object object, int columnIndex) {
+		return null;
+	}
 
+	public String getColumnText(Object object, int columnIndex) {
+		Library lib = (Library) object;
+		switch (columnIndex) {
+		case 0:
+			return lib.getName();
+		case 1:
+			return lib.getBooks().size() + "";
+		case 2:
+			return "";
+		default:
+			return "";
+		}
+	}
 	/**
 	 * This returns the property descriptors for the adapted class.
 	 * <!-- begin-user-doc -->

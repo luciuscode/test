@@ -992,7 +992,7 @@ public class LibraryEditor
 	 * This is the method used by the framework to install your own controls.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public void createPages() {
@@ -1144,15 +1144,24 @@ public class LibraryEditor
 
 				TableColumn objectColumn = new TableColumn(table, SWT.NONE);
 				layout.addColumnData(new ColumnWeightData(3, 100, true));
-				objectColumn.setText(getString("_UI_ObjectColumn_label"));
+				objectColumn.setText("Name");
 				objectColumn.setResizable(true);
 
-				TableColumn selfColumn = new TableColumn(table, SWT.NONE);
+//				TableColumn selfColumn = new TableColumn(table, SWT.NONE);
+//				layout.addColumnData(new ColumnWeightData(2, 100, true));
+//				selfColumn.setText(getString("_UI_SelfColumn_label"));
+//				selfColumn.setResizable(true);
+				TableColumn childColumn = new TableColumn(table, SWT.NONE);
 				layout.addColumnData(new ColumnWeightData(2, 100, true));
-				selfColumn.setText(getString("_UI_SelfColumn_label"));
-				selfColumn.setResizable(true);
+				childColumn.setText("Children");
+				childColumn.setResizable(true);
+				
+				TableColumn decColumn = new TableColumn(table, SWT.NONE);
+				layout.addColumnData(new ColumnWeightData(2, 100, true));
+				decColumn.setText("Desc");
+				decColumn.setResizable(true);
 
-				tableViewer.setColumnProperties(new String [] {"a", "b"});
+//				tableViewer.setColumnProperties(new String [] {"a", "b"});
 				tableViewer.setContentProvider(new AdapterFactoryContentProvider(adapterFactory));
 				tableViewer.setLabelProvider(new AdapterFactoryLabelProvider(adapterFactory));
 
@@ -1314,7 +1323,7 @@ public class LibraryEditor
 	 * This accesses a cached version of the content outliner.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
 	public IContentOutlinePage getContentOutlinePage() {
 		if (contentOutlinePage == null) {
@@ -1332,6 +1341,8 @@ public class LibraryEditor
 					contentOutlineViewer.setContentProvider(new AdapterFactoryContentProvider(adapterFactory));
 					contentOutlineViewer.setLabelProvider(new AdapterFactoryLabelProvider(adapterFactory));
 					contentOutlineViewer.setInput(editingDomain.getResourceSet());
+					//TODO:
+//					contentOutlineViewer.setInput(editingDomain.getResourceSet().getResources().get(0));
 
 					// Make sure our popups work.
 					//
