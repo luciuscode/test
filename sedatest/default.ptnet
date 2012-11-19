@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptnetLoLA:PtNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ptnetLoLA="http://www.informatik.hu-berlin.de/top/tools/editors/petrinets">
+  <places name="p1" incoming="//@arcs.7" outgoing="//@arcs.0"/>
+  <places name="p2" incoming="//@arcs.1" outgoing="//@arcs.2 //@arcs.4"/>
+  <places name="p3" incoming="//@arcs.3"/>
+  <places name="p4" incoming="//@arcs.5" outgoing="//@arcs.6"/>
+  <transitions xsi:type="ptnetLoLA:TransitionExt" name="t1" incoming="//@arcs.0" outgoing="//@arcs.1"/>
+  <transitions xsi:type="ptnetLoLA:TransitionExt" name="t2" incoming="//@arcs.2" outgoing="//@arcs.3"/>
+  <transitions xsi:type="ptnetLoLA:TransitionExt" name="t3" incoming="//@arcs.4" outgoing="//@arcs.5"/>
+  <transitions xsi:type="ptnetLoLA:TransitionExt" name="t4" incoming="//@arcs.6" outgoing="//@arcs.7"/>
+  <initialMarking>
+    <places place="//@places.0"/>
+  </initialMarking>
+  <arcs xsi:type="ptnetLoLA:ArcToTransition" source="//@places.0" target="//@transitions.0"/>
+  <arcs xsi:type="ptnetLoLA:ArcToPlace" source="//@transitions.0" target="//@places.1" weight="2"/>
+  <arcs xsi:type="ptnetLoLA:ArcToTransition" source="//@places.1" target="//@transitions.1"/>
+  <arcs xsi:type="ptnetLoLA:ArcToPlace" source="//@transitions.1" target="//@places.2"/>
+  <arcs xsi:type="ptnetLoLA:ArcToTransition" source="//@places.1" target="//@transitions.2"/>
+  <arcs xsi:type="ptnetLoLA:ArcToPlace" source="//@transitions.2" target="//@places.3"/>
+  <arcs xsi:type="ptnetLoLA:ArcToTransition" source="//@places.3" target="//@transitions.3"/>
+  <arcs xsi:type="ptnetLoLA:ArcToPlace" source="//@transitions.3" target="//@places.0"/>
+  <finalMarking/>
+</ptnetLoLA:PtNet>
