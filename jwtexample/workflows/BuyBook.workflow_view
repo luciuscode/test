@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:view="org.eclipse.jwt/view">
+  <describesModel href="BuyBook.workflow#/"/>
+  <layoutData viewid="UML" x="612" y="521" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="UML" x="555" y="463" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="UML" x="327" y="513" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="UML" x="819" y="68" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="UML" x="439" y="353" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="UML" x="636" y="104" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="UML" x="106" y="337" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="UML" x="688" y="578" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="UML" x="917" y="182" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+  <layoutData viewid="UML" x="800" y="251" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.9"/>
+  </layoutData>
+  <layoutData viewid="UML" x="721" y="152" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.10"/>
+  </layoutData>
+  <layoutData viewid="UML" x="787" y="436" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="612" y="521" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="555" y="463" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="327" y="513" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="819" y="68" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="439" y="353" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="636" y="104" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="116" y="341" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="688" y="578" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="917" y="182" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="800" y="251" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.9"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="721" y="152" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.10"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="787" y="436" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="Technical" x="240" y="591" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="Technical" x="56" y="556" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="Technical" x="116" y="484" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="Technical" x="273" y="388" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="Technical" x="569" y="341" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="Technical" x="250" y="290" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="Technical" x="464" y="280" initialized="true"/>
+  <layoutData describesElement="//@references.7" viewid="Technical" x="403" y="87" initialized="true"/>
+  <layoutData describesElement="//@references.8" viewid="Technical" x="572" y="38" initialized="true"/>
+  <layoutData describesElement="//@references.9" viewid="Technical" x="944" y="587" initialized="true"/>
+  <layoutData describesElement="//@references.10" viewid="Technical" x="883" y="652" initialized="true"/>
+  <layoutData describesElement="//@references.11" viewid="Technical" x="537" y="620" initialized="true"/>
+  <layoutData describesElement="//@references.12" viewid="Technical" x="700" y="676" initialized="true"/>
+  <layoutData describesElement="//@references.13" viewid="Technical" x="1112" y="218" initialized="true"/>
+  <layoutData describesElement="//@references.14" viewid="Technical" x="1197" y="144" initialized="true"/>
+  <layoutData describesElement="//@references.15" viewid="Technical" x="1036" y="114" initialized="true"/>
+  <layoutData describesElement="//@references.16" viewid="Technical" x="1076" y="439" initialized="true"/>
+  <layoutData describesElement="//@references.17" viewid="Technical" x="889" y="485" initialized="true"/>
+  <layoutData describesElement="//@references.18" viewid="Technical" x="978" y="381" initialized="true"/>
+  <layoutData viewid="Technical">
+    <describesElement href="BuyBook.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="UML" x="240" y="591" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="UML" x="56" y="556" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="UML" x="116" y="484" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="UML" x="273" y="388" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="UML" x="569" y="341" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="UML" x="250" y="290" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="UML" x="464" y="280" initialized="true"/>
+  <layoutData describesElement="//@references.7" viewid="UML" x="403" y="87" initialized="true"/>
+  <layoutData describesElement="//@references.8" viewid="UML" x="572" y="38" initialized="true"/>
+  <layoutData describesElement="//@references.9" viewid="UML" x="944" y="587" initialized="true"/>
+  <layoutData describesElement="//@references.10" viewid="UML" x="883" y="652" initialized="true"/>
+  <layoutData describesElement="//@references.11" viewid="UML" x="537" y="620" initialized="true"/>
+  <layoutData describesElement="//@references.12" viewid="UML" x="700" y="676" initialized="true"/>
+  <layoutData describesElement="//@references.13" viewid="UML" x="1112" y="218" initialized="true"/>
+  <layoutData describesElement="//@references.14" viewid="UML" x="1197" y="144" initialized="true"/>
+  <layoutData describesElement="//@references.15" viewid="UML" x="1036" y="114" initialized="true"/>
+  <layoutData describesElement="//@references.16" viewid="UML" x="1076" y="439" initialized="true"/>
+  <layoutData describesElement="//@references.17" viewid="UML" x="889" y="485" initialized="true"/>
+  <layoutData describesElement="//@references.18" viewid="UML" x="978" y="381" initialized="true"/>
+  <layoutData viewid="UML">
+    <describesElement href="BuyBook.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business">
+    <describesElement href="BuyBook.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business" x="290" y="101" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="Business" x="504" y="91" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="Business" x="350" y="39" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="Business" x="994" y="89" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="Business" x="77" y="112" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="Business" x="756" y="139" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="Business" x="9" y="114" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="Business" x="336" y="165" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="Business" x="630" y="139" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+  <layoutData viewid="Business" x="546" y="89" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.9"/>
+  </layoutData>
+  <layoutData viewid="Business" x="938" y="89" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.10"/>
+  </layoutData>
+  <layoutData viewid="Business" x="182" y="112" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="Business" x="130" y="287" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="Business" x="50" y="207" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="Business" x="50" y="120" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="Business" x="589" y="68" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="Business" x="670" y="87" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="Business" x="727" y="119" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="Business" x="751" y="158" initialized="true"/>
+  <layoutData describesElement="//@references.7" viewid="Business" x="1272" y="329" initialized="true"/>
+  <layoutData describesElement="//@references.8" viewid="Business" x="1060" y="446" initialized="true"/>
+  <layoutData describesElement="//@references.9" viewid="Business" x="961" y="260" initialized="true"/>
+  <layoutData describesElement="//@references.10" viewid="Business" x="837" y="328" initialized="true"/>
+  <layoutData describesElement="//@references.11" viewid="Business" x="661" y="369" initialized="true"/>
+  <layoutData describesElement="//@references.12" viewid="Business" x="463" y="376" initialized="true"/>
+  <layoutData describesElement="//@references.13" viewid="Business" x="734" y="480" initialized="true"/>
+  <layoutData describesElement="//@references.14" viewid="Business" x="429" y="490" initialized="true"/>
+  <layoutData describesElement="//@references.15" viewid="Business" x="141" y="446" initialized="true"/>
+  <layoutData describesElement="//@references.16" viewid="Business" x="272" y="84" initialized="true"/>
+  <layoutData describesElement="//@references.17" viewid="Business" x="365" y="46" initialized="true"/>
+  <layoutData describesElement="//@references.18" viewid="Business" x="486" y="27" initialized="true"/>
+  <layoutData viewid="EPC" x="366" y="125" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="594" y="22" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="480" y="189" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="1166" y="22" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="137" y="215" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="938" y="48" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="23" y="215" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="480" y="74" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="823" y="87" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="709" y="22" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.9"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="1052" y="22" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.10"/>
+  </layoutData>
+  <layoutData viewid="EPC" x="251" y="163" initialized="true">
+    <describesElement href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="EPC" x="594" y="176" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="EPC" x="594" y="202" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="EPC" x="594" y="228" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="EPC" x="251" y="330" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="EPC" x="251" y="356" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="EPC" x="251" y="381" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="EPC" x="251" y="407" initialized="true"/>
+  <layoutData describesElement="//@references.7" viewid="EPC" x="1052" y="48" initialized="true"/>
+  <layoutData describesElement="//@references.8" viewid="EPC" x="1052" y="74" initialized="true"/>
+  <layoutData describesElement="//@references.9" viewid="EPC" x="594" y="48" initialized="true"/>
+  <layoutData describesElement="//@references.10" viewid="EPC" x="594" y="74" initialized="true"/>
+  <layoutData describesElement="//@references.11" viewid="EPC" x="594" y="99" initialized="true"/>
+  <layoutData describesElement="//@references.12" viewid="EPC" x="594" y="125" initialized="true"/>
+  <layoutData describesElement="//@references.13" viewid="EPC" x="938" y="99" initialized="true"/>
+  <layoutData describesElement="//@references.14" viewid="EPC" x="938" y="125" initialized="true"/>
+  <layoutData describesElement="//@references.15" viewid="EPC" x="938" y="151" initialized="true"/>
+  <layoutData describesElement="//@references.16" viewid="EPC" x="366" y="253" initialized="true"/>
+  <layoutData describesElement="//@references.17" viewid="EPC" x="366" y="279" initialized="true"/>
+  <layoutData describesElement="//@references.18" viewid="EPC" x="366" y="304" initialized="true"/>
+  <layoutData viewid="EPC">
+    <describesElement href="BuyBook.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <references referenceEdges="//@referenceEdges.0">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.0/@elements.4"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.1">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.3"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.2">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.4"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.3">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.1/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.4">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.5">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.3"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.6">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.2"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.7">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.1/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.8">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.7"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.9">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.0/@elements.3"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.10">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.11">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.5"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.12">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.1"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.13">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@elements.2"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.14">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.6"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.15">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.7"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.16">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.0/@elements.2"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.17">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.2"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.18">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <reference href="BuyBook.workflow#//@subpackages.2/@elements.6"/>
+  </references>
+  <referenceEdges reference="//@references.0" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.1" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.2" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.3" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.4" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.5" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.6" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.4"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.7" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.8" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.5"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.9" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.10" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.11" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.12" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.7"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.13" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.14" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.15" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.8"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.16" direction="none">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.17" direction="in">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.18" direction="out">
+    <containedIn href="BuyBook.workflow#//@elements.0"/>
+    <action href="BuyBook.workflow#//@elements.0/@nodes.11"/>
+  </referenceEdges>
+</view:Diagram>

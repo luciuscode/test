@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:view="org.eclipse.jwt/view">
+  <describesModel href="test.workflow#/"/>
+  <layoutData viewid="Technical" x="42" y="348" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="Technical" width="57" height="29" x="236" y="280" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="364" y="283" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="364" y="350" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="364" y="409" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="238" y="345" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="238" y="406" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="126" y="345" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="189" y="344" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+</view:Diagram>
