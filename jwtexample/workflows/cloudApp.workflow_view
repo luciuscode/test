@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:view="org.eclipse.jwt/view">
+  <describesModel href="cloudApp.workflow#/"/>
+  <layoutData viewid="Technical" x="81" y="84" initialized="true">
+    <describesElement href="cloudApp.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="110" y="308" initialized="true">
+    <describesElement href="cloudApp.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="73" y="220" initialized="true">
+    <describesElement href="cloudApp.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="Technical" x="336" y="114" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="Technical" x="56" y="27" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="Technical" x="126" y="27" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="Technical" x="224" y="126" initialized="true"/>
+  <layoutData viewid="Technical" x="28" y="88" initialized="true">
+    <describesElement href="cloudApp.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData describesElement="//@references.4" viewid="Technical" x="321" y="196" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="Technical" x="338" y="250" initialized="true"/>
+  <references referenceEdges="//@referenceEdges.0 //@referenceEdges.5">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@subpackages.1/@elements.1"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.2">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@elements.2"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.1">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@elements.3"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.3 //@referenceEdges.4">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@elements.4"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.6">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@elements.5"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.7">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <reference href="cloudApp.workflow#//@elements.6"/>
+  </references>
+  <referenceEdges reference="//@references.0">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.2">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.1" direction="in">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.3" direction="out">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.3" direction="in">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.0">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.4">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.5" direction="out">
+    <containedIn href="cloudApp.workflow#//@elements.0"/>
+    <action href="cloudApp.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+</view:Diagram>

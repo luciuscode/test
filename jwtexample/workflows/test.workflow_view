@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:view="org.eclipse.jwt/view">
+  <describesModel href="test.workflow#/"/>
+  <layoutData viewid="Technical" x="70" y="42" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="462" y="100" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="Technical" x="224" y="22" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="Technical" x="420" y="32" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="Technical" x="504" y="46" initialized="true"/>
+  <layoutData viewid="Technical" x="31" y="100" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData describesElement="//@references.3" viewid="Technical" x="14" y="175" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="Technical" x="93" y="175" initialized="true"/>
+  <layoutData viewid="Technical" x="445" y="196" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData describesElement="//@references.5" viewid="Technical" x="443" y="252" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="Technical" x="376" y="252" initialized="true"/>
+  <layoutData viewid="Business" x="426" y="24" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="Business" x="200" y="240" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="Business" x="483" y="213" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="Business" x="425" y="187" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="Business" x="310" y="183" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="Business" x="30" y="240" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="Business" x="133" y="355" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="Business" x="627" y="298" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="Business" x="644" y="159" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="Business" x="449" y="350" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="Business" x="520" y="20" initialized="true"/>
+  <layoutData viewid="Business">
+    <describesElement href="test.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business">
+    <describesElement href="test.workflow#//@subpackages.1/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business">
+    <describesElement href="test.workflow#//@subpackages.2/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business">
+    <describesElement href="test.workflow#//@subpackages.2/@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Business">
+    <describesElement href="test.workflow#//@elements.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="epc" x="196" y="418" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="epc" x="291" y="182" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="epc" x="403" y="371" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="epc" x="493" y="157" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="epc" x="352" y="249" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="epc" x="442" y="61" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="epc" x="43" y="211" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="epc" x="570" y="404" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="epc" x="389" y="467" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="epc" x="731" y="115" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="epc" x="334" y="27" initialized="true"/>
+  <layoutData viewid="epc">
+    <describesElement href="test.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="epc">
+    <describesElement href="test.workflow#//@subpackages.1/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="epc">
+    <describesElement href="test.workflow#//@subpackages.2/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="epc">
+    <describesElement href="test.workflow#//@subpackages.2/@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="epc">
+    <describesElement href="test.workflow#//@elements.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="uml" x="241" y="108" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.0"/>
+  </layoutData>
+  <layoutData viewid="uml" x="361" y="175" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.1"/>
+  </layoutData>
+  <layoutData viewid="uml" x="402" y="211" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.2"/>
+  </layoutData>
+  <layoutData viewid="uml" x="178" y="301" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.3"/>
+  </layoutData>
+  <layoutData describesElement="//@references.0" viewid="uml" x="299" y="275" initialized="true"/>
+  <layoutData describesElement="//@references.1" viewid="uml" x="457" y="57" initialized="true"/>
+  <layoutData describesElement="//@references.2" viewid="uml" x="409" y="328" initialized="true"/>
+  <layoutData describesElement="//@references.3" viewid="uml" x="563" y="294" initialized="true"/>
+  <layoutData describesElement="//@references.4" viewid="uml" x="563" y="169" initialized="true"/>
+  <layoutData describesElement="//@references.5" viewid="uml" x="123" y="428" initialized="true"/>
+  <layoutData describesElement="//@references.6" viewid="uml" x="29" y="308" initialized="true"/>
+  <layoutData viewid="uml">
+    <describesElement href="test.workflow#//@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="uml">
+    <describesElement href="test.workflow#//@subpackages.1/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="uml">
+    <describesElement href="test.workflow#//@subpackages.2/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="uml">
+    <describesElement href="test.workflow#//@subpackages.2/@subpackages.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="uml">
+    <describesElement href="test.workflow#//@elements.0/@ownedComment.0"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="913" y="127" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.4"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="640" y="123" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.5"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="614" y="130" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.6"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="714" y="127" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.7"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="731" y="93" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.8"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="731" y="162" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.9"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="840" y="127" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.10"/>
+  </layoutData>
+  <layoutData viewid="Technical" x="200" y="141" initialized="true">
+    <describesElement href="test.workflow#//@elements.0/@nodes.11"/>
+  </layoutData>
+  <references referenceEdges="//@referenceEdges.1 //@referenceEdges.4 //@referenceEdges.8">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.1/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.2">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.2/@subpackages.0/@elements.5"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.0">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.0/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.3">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.0/@elements.1"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.5">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.2/@subpackages.0/@elements.6"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.7">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@subpackages.0/@elements.0"/>
+  </references>
+  <references referenceEdges="//@referenceEdges.6">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <reference href="test.workflow#//@elements.1"/>
+  </references>
+  <referenceEdges reference="//@references.2">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.0">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.1" direction="in">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.1"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.3">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.0">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.4" direction="in">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.2"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.6" direction="in">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.5">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+  <referenceEdges reference="//@references.0">
+    <containedIn href="test.workflow#//@elements.0"/>
+    <action href="test.workflow#//@elements.0/@nodes.3"/>
+  </referenceEdges>
+</view:Diagram>
