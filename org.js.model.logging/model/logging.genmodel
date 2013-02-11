@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.js.model.logging/src" modelPluginID="org.js.model.logging"
+    modelName="Logging" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false" usedGenPackages="../../org.js.model.feature/src/main/model/feature.genmodel#//feature ../../org.js.model.rbac/src/main/model/rbac.genmodel#//rbac">
+  <foreignModel>logging.ecore</foreignModel>
+  <genPackages prefix="Logging" basePackage="org.js.model" disposableProviderFactory="true"
+      ecorePackage="logging.ecore#/">
+    <nestedGenPackages prefix="Acmref" basePackage="org.js.model.model" disposableProviderFactory="true"
+        ecorePackage="logging.ecore#//acmref">
+      <genClasses ecoreClass="logging.ecore#//acmref/ACMConnector">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference logging.ecore#//acmref/ACMConnector/ACMRef"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Roleref" basePackage="org.js.model.model" disposableProviderFactory="true"
+        ecorePackage="logging.ecore#//roleref">
+      <genClasses ecoreClass="logging.ecore#//roleref/RoleConnector">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference logging.ecore#//roleref/RoleConnector/roleref"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages prefix="Conf" ecorePackage="org.eclipse.jwt.conf#/">
+    <genClasses ecoreClass="org.eclipse.jwt.conf#//ConfModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//ConfModel/profiles"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//ConfModel/useEmbeddedConf"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//ConfModel/aspectInstances"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//ConfModel/enrichedModel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//ConfModel/cachedNoMissingProfile"/>
+    </genClasses>
+    <genClasses ecoreClass="org.eclipse.jwt.conf#//Profile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Profile/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Profile/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Profile/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Profile/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Profile/url"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//Profile/aspects"/>
+    </genClasses>
+    <genClasses ecoreClass="org.eclipse.jwt.conf#//Aspect">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Aspect/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//Aspect/aspectInstanceEType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//Aspect/targetModelElements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Aspect/autocreated"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Aspect/multiple"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//Aspect/defaultValue"/>
+    </genClasses>
+    <genClasses ecoreClass="org.eclipse.jwt.conf#//AspectInstance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.jwt.conf#//AspectInstance/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.jwt.conf#//AspectInstance/targetModelElement"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

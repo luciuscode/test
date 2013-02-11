@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id: plugin.xml,v 1.1 2009-01-07 14:46:35 mdutoo Exp $
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <factory
+            uri="org.eclipse.jwt.sample.aspectschildextender"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+
+
+   <!-- Child creation extender for the conf package extensions -->
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt.conf"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ConfChildCreationExtender"/>
+   </extension>
+
+
+   <!-- Child creation extender for the processes package extensions -->
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/core"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/processes"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/events"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/primitiveTypes"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/functions"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/organisations"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/application"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/data"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.childCreationExtenders">
+      <extender
+            uri="org.eclipse.jwt/view"
+            class="org.eclipse.jwt.sample.aspectschildextender.provider.AspectsChildExtenderItemProviderAdapterFactory$ProcessesChildCreationExtender"/>
+   </extension>
+
+</plugin>

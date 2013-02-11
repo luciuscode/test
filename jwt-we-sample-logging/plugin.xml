@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id: plugin.xml,v 1.1 2009-11-02 15:52:25 mdutoo Exp $
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="org.eclipse.jwt.sample.logging"
+            class="org.eclipse.jwt.sample.logging.LoggingPackage"
+            genModel="model/logging.genmodel"/>
+   </extension>
+
+   <extension
+         id="org.eclipse.jwt.we.conf.sample.staticaspect"
+         name="Logging Aspect"
+         point="org.eclipse.jwt.we.conf.model.conf">
+      <conf
+            file="conf/logging.conf">
+      </conf>
+   </extension>
+
+</plugin>

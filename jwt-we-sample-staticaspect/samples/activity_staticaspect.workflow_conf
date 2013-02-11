@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<conf:ConfModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:conf="org.eclipse.jwt.conf" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:staticaspect="org.eclipse.jwt.sample.staticaspect" useEmbeddedConf="true">
+  <profiles name="jwt.sample.staticaspect" url="http://www.eclipse.org/jwt/profiles/jwt__sample__staticaspect.html">
+    <aspects id="jwt.sample.staticaspect.sampleactionaspect">
+      <aspectInstanceEType xsi:type="ecore:EClass" href="org.eclipse.jwt.sample.staticaspect#//SampleStaticAspect"/>
+      <targetModelElements href="org.eclipse.jwt/processes#//Action"/>
+    </aspects>
+  </profiles>
+  <aspectInstances xsi:type="staticaspect:SampleStaticAspect" id="jwt.sample.staticaspect.sampleactionaspect" samplestringprop="mysamplestringpropvalue" sampleintprop="11">
+    <targetModelElement href="activity_staticaspect.workflow#//@elements.0/@nodes.0"/>
+  </aspectInstances>
+  <enrichedModel href="activity_staticaspect.workflow#/"/>
+</conf:ConfModel>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id: plugin.xml,v 1.2 2009-11-27 13:57:40 chsaad Exp $
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <factory
+            uri="org.eclipse.jwt.sample.staticaspect"
+            class="org.eclipse.jwt.sample.staticaspect.provider.StaticaspectItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+    
+
+   <!-- define a specific tab for the SamplesStaticAspect -->
+   <extension
+         point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+      <propertyTabs
+            contributorId="org.eclipse.jwt.we.editors.WEEditor">
+         <propertyTab
+               afterTab="org.eclipse.jwt.we.PropertyTabStandard"
+               category="WEStandardCategory"
+               id="org.eclipse.jwt.we.propertytabs.aspects.SampleStaticAspect"
+               label="SampleStaticAspect">
+         </propertyTab>
+      </propertyTabs>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views.properties.tabbed.propertySections">
+      <propertySections
+            contributorId="org.eclipse.jwt.we.editors.WEEditor">
+         <propertySection
+               class="org.eclipse.jwt.we.modelext.editors.properties.tabbedPage.SampleStaticAspectPropertySection"
+               id="org.eclipse.jwt.we.propertytabs.aspects.SampleStaticAspect.DefaultSection"
+               tab="org.eclipse.jwt.we.propertytabs.aspects.SampleStaticAspect">
+            <!-- Here are samples of possible inputs for a JWT property section : -->
+            <!-- input being Action will only display it on Action activity nodes -->
+            <!-- input
+                  type="org.eclipse.jwt.we.model.processes.Action" -->
+            <!-- input being ActivityNode will display it on all ActivityNodes including Join, Action... -->
+            <!-- input
+                  type="org.eclipse.jwt.we.model.processes.ActivityNode" -->
+            <!-- input being EObject will display it on any model object -->
+            <!-- input
+                  type="org.eclipse.emf.ecore.EObject" -->
+            <!-- input being ModelElement will display it on any JWT model element -->
+            <input
+                  type="org.eclipse.jwt.meta.model.core.ModelElement">
+            </input>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+</plugin>

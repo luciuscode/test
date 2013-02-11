@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="org.eclipse.jwt.we.sheet"
+         name="Example"
+         point="org.eclipse.jwt.we.sheet">
+      <sheet
+            autoshow="true"
+            class="org.eclipse.jwt.we.plugins.exampleext.sheets.ExampleSheet1SheetProvider"
+            closable="false"
+            multiple="false"
+            title="%sheet_Example1_title">
+      </sheet>
+      <sheet
+            autoshow="true"
+            class="org.eclipse.jwt.we.plugins.exampleext.sheets.ExampleSheet2SheetProvider"
+            closable="true"
+            multiple="true"
+            title="%sheet_Example2_title">
+      </sheet>
+   </extension>
+   
+   <extension
+         id="org.eclipse.jwt.we.view.extension-test"
+         name="Extension Test"
+         point="org.eclipse.jwt.we.view">
+      <view
+            displayName="Example View 1"
+            id="example1"
+            viewFile="src/org/eclipse/jwt/we/plugins/exampleext/view/ExampleView1/NoApplication.view">
+      </view>
+      <view
+            displayName="Example View 2"
+            factoryRegistry="org.eclipse.jwt.we.plugins.exampleext.view.ExampleView2.CustomFigureFactory"
+            id="example2"
+            viewFile="src/org/eclipse/jwt/we/plugins/exampleext/view/ExampleView2/NoData.view">
+      </view>
+   </extension>
+   
+      <extension
+         id="org.eclipse.jwt.we.menu"
+         name="org.eclipse.jwt.we.menu"
+         point="org.eclipse.jwt.we.menu">
+      <action
+            class="org.eclipse.jwt.we.plugins.exampleext.actions.SampleAction1"
+            description="Sample1 Description"
+            forceText="false"
+            name="Sample1"
+            requiresOpenEditor="true"
+            showInMenu="true"
+            showInToolbar="true"/>
+      <action
+            class="org.eclipse.jwt.we.plugins.exampleext.actions.SampleAction2"
+            description="Sample2Description"
+            forceText="true"
+            name="Sample2"
+            requiresOpenEditor="true"
+            showInMenu="true"
+            showInToolbar="false"/>
+      <action
+            class="org.eclipse.jwt.we.plugins.exampleext.actions.SampleAction3"
+            description="Sample3 Description"
+            forceText="true"
+            name="Sample3"
+            requiresOpenEditor="true"
+            showInMenu="false"
+            showInToolbar="true"/>
+      <action
+            class="org.eclipse.jwt.we.plugins.exampleext.actions.SampleAction4"
+            description="Sample4 Description"
+            forceText="true"
+            name="Sample4"
+            requiresOpenEditor="false"
+            showInMenu="true"
+            showInToolbar="true"/>
+   </extension>
+
+  <extension
+         point="org.eclipse.jwt.transformations">
+      <transformation
+            class="org.eclipse.jwt.we.plugins.exampleext.transformation.StubTransformation"
+            description="This is an export Stub"
+            name="Stub Transformation (export)"
+            type="export">
+      </transformation>
+      <transformation
+            class="org.eclipse.jwt.we.plugins.exampleext.transformation.StubTransformation"
+            description="This is an import stub!"
+            name="Stub transformation (import)"
+            type="import">
+      </transformation>
+   </extension>
+
+</plugin>
